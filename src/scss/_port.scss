@@ -1,0 +1,246 @@
+.port-logo {
+    text-align: center;
+    font-size: 20px;
+}
+
+.port-block-logo {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 15px;
+
+    p {
+        font-size: 20px;
+        margin-bottom: 30px;
+        font-weight: 800;
+        color: #838383;
+        cursor: pointer;
+
+        &:hover {
+            color: black;
+            font-weight: 1000;
+        }
+    }
+}
+
+.port-block {
+    p {
+        text-align: center;
+        font-size: 16px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 1000;
+        margin: 20px 0;
+    }
+}
+
+.port-block-slide {
+    max-width: 100%;
+    display: block;
+}
+
+.slick-track {
+    padding-left: 8px;
+}
+
+
+.port-block-slide-inner {
+    margin-top: 20px;
+    text-align: center;
+    max-width: 100%;
+    height: 100%;
+
+
+    span {
+        font-family: 'Raleway', sans-serif;
+        margin-top: 10px;
+        font-weight: 1000;
+        font-size: 15px;
+    }
+}
+
+.port-block-overlay {
+    width: 95%;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 500px;
+    }
+
+}
+
+.port-block-overlay::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(rgba(22, 34, 42, 0.8), rgba(22, 34, 42, 0.4));
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+
+.slick-active {
+    .port-block-overlay::after {
+        background: transparent;
+        transition: 0.4s;
+    }
+}
+
+.port-slide-inner-text {
+    display: none;
+}
+
+.port-acc {
+    display: none;
+}
+
+@media only screen and (min-width:768px) {
+    .port-block-logo {
+        display: flex;
+        justify-content: flex-start;
+        p:nth-child(n+2){
+            margin-left: 40px;
+        }
+    }
+
+    .port-block-slide {
+        display: flex;
+    }
+
+    .port-block-slide-inner {
+        display: block;
+        height: 550px;
+        max-width: 100%;
+
+        &::before {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .port-block-overlay {
+        width: 80%;
+    }
+
+    .port-acc {
+        display: none;
+    }
+
+    .port-block-slide {
+        display: block;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .port-block {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .port-logo{
+        text-align: start;
+    }
+    
+    .port-block-slide-inner {
+        margin-right: -20px;
+    }
+
+    .port-slide-inner-text {
+        display: block;
+        color: white;
+        transform: rotate(270deg);
+        margin-top: -140px;
+        margin-left: -172px;
+    }
+
+    .port-block-overlay::after {
+        width: 100%;
+        height: 99%;
+    }
+
+    .port-acc {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .port-block-slide {
+        display: none;
+    }
+
+    .port-nav-acc-info {
+        display: flex;
+    }
+
+    .port-nav-acc-info-logitech {
+        position: relative;
+        width: 20%;
+        height: 500px;
+        transition: 0.4s;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+            label::before{
+                position: absolute;
+                content: '';
+                background:linear-gradient(rgba(22, 34, 42, 0.8), rgba(22, 34, 42, 0.4)) ;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+             }
+    }
+
+    .port-power {
+        display: none;
+    }
+
+    @for $var from 1 to 5 {
+        .port-power:nth-child(#{$var}):checked~.port-nav-acc-info .port-nav-acc-info-logitech:nth-child(#{$var}) {
+            width: 40%;
+        }
+        .port-power:nth-child(#{$var}):checked~.port-nav-acc-info .port-nav-acc-info-logitech:nth-child(#{$var}) label::before {
+            display: none;
+        }
+        .port-power:nth-child(#{$var}):checked~.port-nav-acc-info .port-nav-acc-info-logitech:nth-child(#{$var}) .port-nav-plus a{
+            display: block;
+        }
+
+    }
+
+    .port-nav-top-text {
+       left: 20px;
+        width: 80%;
+        position: absolute;
+        top: 15px;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+    }
+    .port-nav-bottom-text{
+        transform: rotate(270deg);
+        position: absolute;
+        top: 75%;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        left: -30px;
+    }
+    .port-nav-plus{
+        a{
+            display: none;
+            text-decoration: none;
+            color: white;
+            font-size: 35px;
+            font-weight: 1000;
+            text-align: center;
+            background-color: rgba(248, 162, 90, 0.8);
+            position: absolute;
+            top:45%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px; 
+            border-radius: 50%;
+        }
+    }
+
+}

@@ -1,0 +1,129 @@
+.console-logo {
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.console-block {
+    margin-top: 30px;
+}
+
+.console-block-inner-nav {
+    p {
+        margin: 20px 0 15px 0;
+        font-family: "Raleway", sans-serif;
+        color: #838383;
+        line-height: 20px;
+    }
+}
+
+.console-before{
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 1px;
+        background-color: black;
+    }
+}
+
+.console-block-nav-flex {
+    margin-bottom: 7px;
+    img {
+        display: none;
+    }
+
+    span {
+        font-size: 20px;
+        font-weight: 1000;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .console-block {
+        display: flex;
+    }
+
+    .console-block-inner-nav {
+        width: 75%;
+       p{
+        margin: -10px 0 15px 0;
+       }
+    }
+
+    .console-before{
+        margin-left:26%;
+    }
+
+    .console-block-nav-flex {
+        display: flex;
+        margin-bottom: -10px;
+        img {
+            display: block;
+        }
+
+        span {
+            margin-top: 15px;
+
+            &::before {
+                bottom: 17px;
+            }
+        }
+    }
+    .console-inner-nav-six{
+        margin-top: 6px;
+    }   
+}
+
+@media only screen and(min-width:1024px) {
+    .console{
+        margin-top: 50px;   
+    }
+    .console-logo {
+        font-size: 35px;
+        text-align: start;
+        margin-left: 28px;
+    }
+
+    .console-block {
+        flex-wrap: wrap;
+    }
+
+    .console-block-inner {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .console-block-inner-nav {
+        p {
+            width: 75%;
+            margin: 0 65px;
+        }
+    }
+
+    .console-block-nav-flex {
+        span {
+            font-size: 25px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .console-block-inner-nav {
+        width: 100%;
+    }
+
+    .console-before{
+        margin-left:20% ;    
+    }
+    .console-block-nav-flex {
+        span {
+            font-size: 24px;
+        }
+    }
+
+
+
+}

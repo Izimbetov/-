@@ -1,0 +1,202 @@
+.client {
+    background-color:#fcf7ec;
+    position: relative;
+    // #fcf7ec
+}
+
+.client-logo {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 1000;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    button {
+        background-color: grey;
+        border: none;
+        font-size: 0;
+        width: 25px;
+        height: 3px;
+    }
+}
+
+.client-inner-photo {
+    position: absolute;
+    margin: 10px 30px;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.client-inner {
+    height: 640px;
+    width: 300px;
+
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 1000;
+        font-size: 18pt;
+        text-align: center;
+    }
+
+    p:nth-of-type(1) {
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 1000;
+        color: #ca881f;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    p:nth-of-type(2) {
+        font-size: 15pt;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        line-height: 25px;
+    }
+}
+
+.client-inner-text {
+    width: 95%;
+    margin: 120px auto 0 auto;
+    padding: 100px 0 20px 0;
+    background-color: white;
+}
+
+.client-photo-two {
+    margin-left: 20px;
+}
+
+.client-photo-three {
+    margin-left: 20px;
+}
+
+@media only screen and (min-width:768px) {
+    .client-logo{
+        text-align: start;
+        padding-top: 50px;
+    }
+    .client-inner-text {
+        padding: 30px 0;
+        width: 90%;
+        margin-left: 5px;
+        box-shadow: 0px 10px 10px 0 #ececec;
+        h1,
+        p:nth-of-type(1),
+        p:nth-of-type(2) {
+            text-align: start;
+        }
+
+        h1,
+        p:nth-of-type(1) {
+            margin-left: 15px;
+        }
+
+        p:nth-child(3) {
+            margin-left: 15px;
+            width: 80%;
+        }
+    }
+
+    .client-inner-photo {
+        margin-left: 10.2%;
+    }
+
+    .client-inner-photo {
+        top: 145px;
+    }
+    .client-photo-one{
+        width: 85%;
+    }
+    .client-photo-two{
+        width: 80%;
+    }
+    .client-photo-three{
+        margin-left: 6%;
+        width:90%;
+    }
+}
+
+@media only screen and(min-width:1024px){
+    .client-inner-text{
+        padding: 50px 0;
+        width: 70%;
+        margin-left:88px;
+        p:nth-of-type(2){
+            width: 90%;
+            line-height: 30px;
+        }
+    }
+    .client-inner-photo{
+        top: 155px;
+    }
+    .client-photo-one{
+        margin-left: -6%;
+        width:100%
+    }
+    .client-photo-two{
+        width:100%;
+        margin-left: 6%;
+    }
+    .client-photo-three{
+        width: 100%;
+        margin-top: 8px;
+    }
+
+}
+
+@media only screen and (min-width:1440px){
+    .client-block{
+        .slick-arrow{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            z-index: 15;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            &::before{
+                content: "";
+                position: absolute;
+                background:linear-gradient(rgba(22, 34, 42, 0.8), rgba(22, 34, 42, 0.4));
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+            }
+        }
+        .slick-prev{
+            background:linear-gradient(rgba(22, 34, 42, 0.8), rgba(22, 34, 42, 0.4));
+            background-repeat:no-repeat;
+            left: -10%;
+            width: 18%;
+            height: 30%;
+            top: 41.5%;
+            transition: 0.5s all linear;
+        }
+        .slick-next{
+            background:linear-gradient(rgba(22, 34, 42, 0.8), rgba(22, 34, 42, 0.4));
+            background-repeat:no-repeat;
+            left: 108%;
+            width: 18%;
+            height: 30%;
+            top: 41.5%;
+            transition: 0.5s all linear;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    padding: 0 15px;
+    max-width: 1100px;
+}
+
+.fixed{
+    position: fixed;
+    border-radius: 50%;
+    right: 25px;
+    bottom: 25px;
+    transform: rotate(-90deg);
+    background-color: rgba(17, 40, 90, 0.473);
+    padding: 5px 15px;
+    z-index: 212;
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        transition: 5.5s all linear;
+
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+@import "header";
+@import "number";
+@import "port";
+@import "import";
+@import "video";
+@import "console";
+@import "brume";
+@import "client";
+@import "footer";

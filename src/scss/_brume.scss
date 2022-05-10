@@ -1,0 +1,121 @@
+.brume {
+    margin: 50px 0;
+}
+
+.brume-block {
+    background: url(../images/360/kitchen360.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.brume-block-logo {
+    font-family: "Playfair Display", sans-serif;
+    padding-top: 30px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: 1000;
+}
+
+.brume-block-text {
+    font-family: "Raleway", sans-serif;
+    color: #939aa0;
+    font-size: 14pt;
+    width: 90%;
+    margin: 15px auto;
+}
+
+.brume-block-nav {
+    flex-direction: column;
+    text-align: center;
+
+    input {
+        border: none;
+        border-bottom: 1px solid #939aa0;
+        background: transparent;
+        margin-bottom: 25px;
+        padding-right: 18%;
+    }
+
+    input#text {
+        font-size: 18px;
+    }
+    a {
+        margin: 15px auto;
+        display: block;
+        font-family: "Raleway", sans-serif;
+        color: white;
+        text-decoration: none;
+        background-color: #f8a25a;
+        padding: 15px 0;
+        width: 90%;
+        border-radius: 4px;
+    }
+}
+.brume-text {
+    color: #939aa0;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.brume-photo{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .brume-block {
+        background: none;
+        background: linear-gradient(rgba(17, 41, 58, 0.8), rgba(17, 41, 58, 0.8)), url(../images/768/brume768.jpg);
+        background-size: 100% 100%;
+    }
+    .brume-block-logo {
+        width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+    .brume-block-text {
+        width: 49%;
+        text-align: center;
+        margin: auto;
+    }
+    .brume-block-nav {
+        input {
+            padding-right: 28%;
+            margin: 30px 0;
+        }
+        label a{
+            width:52%;
+        }
+    }
+    .email-text input#text{ 
+        font-size: 14px;
+        padding-right: 28%;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .brume-block{
+        background: none;
+        background: linear-gradient(#182c3d,#182c3d);
+        flex-basis: 50%;
+    }
+    .brume-photo{
+        display: block; 
+        flex-basis: 50%;
+
+        img{
+         width: 100%;
+         height: 100%;  
+        }
+    }
+    .brume-inner{
+        display: flex;
+        background: url(../images/1024/kitchen1024.jpg) no-repeat;  
+        background-size: cover;
+    }
+
+
+}   
